@@ -26,13 +26,13 @@ ColorScheme _customColorScheme = ColorScheme(
   brightness: Brightness.dark,
   primary: ColorConstants.instance.flamingo,
   onPrimary: ColorConstants.instance.flamingo,
-  background: ColorConstants.instance.white,
+  background: ColorConstants.instance.charade,
   onBackground: ColorConstants.instance.white,
   secondary: ColorConstants.instance.bombay,
   onSecondary: ColorConstants.instance.bombay,
   error: ColorConstants.instance.bombay,
   onError: ColorConstants.instance.bombay,
-  surface: ColorConstants.instance.bombay,
+  surface: ColorConstants.instance.charade,
   onSurface: ColorConstants.instance.bombay,
 );
 
@@ -41,7 +41,7 @@ String fontFamily = GoogleFonts.montserrat().fontFamily!;
 class MyThemes {
   static final lightTheme = ThemeData(
     fontFamily: fontFamily,
-    scaffoldBackgroundColor: _customColorScheme.background,
+    scaffoldBackgroundColor: _customColorScheme.surface,
     primaryColor: _customColorScheme.primary,
     focusColor: _customColorScheme.secondary,
     colorScheme: _customColorScheme,
