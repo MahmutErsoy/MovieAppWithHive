@@ -23,6 +23,9 @@ dependencies:
   #A wrapper around InheritedWidget to make them easier to use and more reusable.
   provider: ^6.1.2
 
+  #Customize Flutter's default white native splash screen with background color and splash image. Supports dark mode, full screen, and more.
+  flutter_native_splash: ^2.4.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
