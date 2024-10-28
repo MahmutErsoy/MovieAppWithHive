@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app_with_hive/core/constants/app_constants.dart';
 import 'package:movie_app_with_hive/core/extension/provider_manager.dart';
 import 'package:movie_app_with_hive/core/extension/theme_provider.dart';
-import 'package:movie_app_with_hive/views/home_screen/home_view.dart';
+import 'package:movie_app_with_hive/views/main_view/main_view.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
               theme: MyThemes.lightTheme,
               darkTheme: MyThemes.darkTheme,
               debugShowCheckedModeBanner: false,
-              home: const HomeView(),
+              home: const MainView(),
             );
           },
         ),
