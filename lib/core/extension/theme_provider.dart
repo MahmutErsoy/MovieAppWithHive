@@ -47,33 +47,33 @@ class MyThemes {
     colorScheme: _customColorScheme,
     textTheme: TextTheme(
       displayLarge: TextStyle(
-        fontSize: 26.sp,
-        color: ColorConstants.instance.codGray,
-        fontWeight: FontWeight.w900,
+        fontSize: 32.sp,
+        color: ColorConstants.instance.mulledWine,
+        fontWeight: FontWeight.w400,
       ),
       displayMedium: TextStyle(
-        fontSize: 24.sp,
-        color: ColorConstants.instance.codGray,
-        fontWeight: FontWeight.w700,
-      ),
-      displaySmall: TextStyle(
-        fontSize: 18.sp,
-        color: ColorConstants.instance.bombay,
+        fontSize: 16.sp,
+        color: ColorConstants.instance.white,
         fontWeight: FontWeight.w600,
       ),
-      headlineMedium: TextStyle(
-        fontSize: 16.sp,
-        color: ColorConstants.instance.codGray,
+      displaySmall: TextStyle(
+        fontSize: 14.sp,
+        color: ColorConstants.instance.white,
         fontWeight: FontWeight.w500,
       ),
+      headlineMedium: TextStyle(
+        fontSize: 12.sp,
+        color: ColorConstants.instance.white,
+        fontWeight: FontWeight.w400,
+      ),
       headlineSmall: TextStyle(
-        fontSize: 14.sp,
-        color: ColorConstants.instance.codGray,
-        fontWeight: FontWeight.w200,
+        fontSize: 12.sp,
+        color: ColorConstants.instance.midGray,
+        fontWeight: FontWeight.w500,
       ),
       titleLarge: TextStyle(
         fontSize: 12.sp,
-        color: ColorConstants.instance.codGray,
+        color: ColorConstants.instance.flushOrange,
         fontWeight: FontWeight.w600,
       ),
     ),
@@ -88,32 +88,32 @@ class MyThemes {
     textTheme: TextTheme(
       displayLarge: TextStyle(
         fontSize: 18.sp,
-        color: ColorConstants.instance.amber,
+        color: ColorConstants.instance.flushOrange,
         fontWeight: FontWeight.w500,
       ),
       displayMedium: TextStyle(
         fontSize: 16.sp,
-        color: ColorConstants.instance.amber,
+        color: ColorConstants.instance.flushOrange,
         fontWeight: FontWeight.w500,
       ),
       displaySmall: TextStyle(
         fontSize: 14.sp,
-        color: ColorConstants.instance.amber,
+        color: ColorConstants.instance.flushOrange,
         fontWeight: FontWeight.w500,
       ),
       headlineMedium: TextStyle(
         fontSize: 14.sp,
-        color: ColorConstants.instance.amber,
+        color: ColorConstants.instance.flushOrange,
         fontWeight: FontWeight.w500,
       ),
       headlineSmall: TextStyle(
         fontSize: 14.sp,
-        color: ColorConstants.instance.amber,
+        color: ColorConstants.instance.flushOrange,
         fontWeight: FontWeight.w500,
       ),
       titleLarge: TextStyle(
         fontSize: 11.sp,
-        color: ColorConstants.instance.amber,
+        color: ColorConstants.instance.flushOrange,
         fontWeight: FontWeight.w400,
       ),
     ),
