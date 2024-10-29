@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app_with_hive/core/base/base_view.dart';
+import 'package:movie_app_with_hive/core/components/global_widgets/app_bar.dart';
 import 'package:movie_app_with_hive/core/constants/app_constants.dart';
+import 'package:movie_app_with_hive/core/constants/navigation_constants.dart';
+import 'package:movie_app_with_hive/core/constants/string_constants.dart';
+import 'package:movie_app_with_hive/core/navigation/navigation_service.dart';
 import 'package:movie_app_with_hive/views/watch_list_screen/watch_list_view_model.dart';
 import 'package:provider/provider.dart';
 
@@ -16,13 +20,20 @@ class WatchListView extends StatelessWidget {
         await model.init();
       },
       pageBuilder: (context, viewModel, _) => Scaffold(
+        appBar: CustomAppBar(
+          title: StringConstants.watchList,     
+        ),
         body: SafeArea(
           child: Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: AppConstants.appPagePadding,
               ),
               child: Center(
-                child: Text("WatchList", style: Theme.of(context).textTheme.displayLarge),
+                child: ElevatedButton(
+                  onPressed: () {
+                    NavigationService.instance.navigateToPage(path: NavigationConstants.detailPage, data: NavigationConstants.watchlistPage);
+                  }, 
+                  child: const Text('Go to Detail View'),)
               )),
         ),
       ),
