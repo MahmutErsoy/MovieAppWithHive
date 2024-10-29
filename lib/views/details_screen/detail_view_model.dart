@@ -4,6 +4,13 @@ import 'package:movie_app_with_hive/core/base/base_view_model.dart';
 class DetailViewModel extends BaseViewModel {
   bool isInit = false;
 
+  bool isBookmarked = false;
+
+  void toggleBookmark() {
+    isBookmarked = !isBookmarked;
+    notifyListeners();
+  }
+
   @override
   void setContext(BuildContext context) => this.context = context;
 
