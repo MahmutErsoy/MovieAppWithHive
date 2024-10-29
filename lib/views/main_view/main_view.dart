@@ -26,7 +26,9 @@ class _MainViewState extends State<MainView> {
         body: viewModel.widgetOptions.elementAt(viewModel.currentIndex),
         bottomNavigationBar: CustomBottomNavigationBar(
           currentIndex: viewModel.currentIndex,
-          onTap: viewModel.navigateTo,
+          onTap: (index) {
+            viewModel.navigateTo(index);
+          },
         ),
       ),
     );
