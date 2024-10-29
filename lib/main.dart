@@ -5,6 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app_with_hive/core/constants/app_constants.dart';
 import 'package:movie_app_with_hive/core/extension/provider_manager.dart';
 import 'package:movie_app_with_hive/core/extension/theme_provider.dart';
+import 'package:movie_app_with_hive/core/navigation/navigation_route.dart';
+import 'package:movie_app_with_hive/core/navigation/navigation_service.dart';
 import 'package:movie_app_with_hive/views/main_view/main_view.dart';
 import 'package:provider/provider.dart';
 
@@ -56,6 +58,8 @@ class _MyAppState extends State<MyApp> {
               theme: MyThemes.lightTheme,
               darkTheme: MyThemes.darkTheme,
               debugShowCheckedModeBanner: false,
+              onGenerateRoute: NavigationRoute.instance.generateRoute,
+              navigatorKey: NavigationService.instance.navigatorKey,
               home: const MainView(),
             );
           },
