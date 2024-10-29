@@ -35,6 +35,7 @@ class _HomeViewState extends State<HomeView> {
               horizontal: AppConstants.appPagePadding,
             ),
             child: Center(
+              // button to navigate to detail view from home view for testing purposes
                 child: ElevatedButton(
                   onPressed: () {
                     NavigationService.instance.navigateToPage(path: NavigationConstants.detailPage, data: NavigationConstants.homePage);

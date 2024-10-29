@@ -14,8 +14,6 @@ class NavigationService implements NavigationServices {
     await navigatorKey.currentState!.pushNamed(path, arguments: data);
   }
 
- 
-
   @override
   void popPage({Object? returnData}) {
     if (returnData is Map && returnData.containsKey('previousTab')) {

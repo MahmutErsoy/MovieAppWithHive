@@ -29,6 +29,7 @@ class SearchView extends StatelessWidget {
                 horizontal: AppConstants.appPagePadding,
               ),
               child: Center(
+                // button to navigate to detail view from search view for testing purposes
                 child: ElevatedButton(
                   onPressed: () {
                     NavigationService.instance.navigateToPage(path: NavigationConstants.detailPage, data: NavigationConstants.searchPage);
