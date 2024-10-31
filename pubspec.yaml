@@ -26,6 +26,12 @@ dependencies:
   #Customize Flutter's default white native splash screen with background color and splash image. Supports dark mode, full screen, and more.
   flutter_native_splash: ^2.4.1
 
+  #A powerful HTTP networking package, supports Interceptors, Aborting and canceling a request, Custom adapters, Transformers, etc.
+  dio: ^5.7.0
+
+  #Functional Programming in Dart. Purify your Dart code using efficient immutable data structures, monads, lenses and other FP tools.
+  dartz: ^0.10.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
