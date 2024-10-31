@@ -6,6 +6,7 @@ import 'package:movie_app_with_hive/core/constants/navigation_constants.dart';
 import 'package:movie_app_with_hive/core/constants/string_constants.dart';
 import 'package:movie_app_with_hive/core/navigation/navigation_service.dart';
 import 'package:movie_app_with_hive/views/home_screen/home_view_model.dart';
+import 'package:movie_app_with_hive/views/home_screen/home_widget.dart';
 import 'package:provider/provider.dart';
 
 
@@ -34,14 +35,7 @@ class _HomeViewState extends State<HomeView> {
             padding: EdgeInsets.symmetric(
               horizontal: AppConstants.appPagePadding,
             ),
-            child: Center(
-              // button to navigate to detail view from home view for testing purposes
-                child: ElevatedButton(
-                  onPressed: () {
-                    NavigationService.instance.navigateToPage(path: NavigationConstants.detailPage, data: NavigationConstants.homePage);
-                  }, 
-                  child: const Text('Go to Detail View'),)
-              )
+            child: ItemListWidget(viewModel: viewModel, list: viewModel.PopularList)
           ),
         ),
       ),
